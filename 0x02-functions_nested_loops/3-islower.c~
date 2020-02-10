@@ -1,0 +1,9 @@
+#include "holberton.h"
+int _islower(int ch)
+{
+  char c=ch;
+  if ( c>="A" && c<="Z")
+    return (0);
+    else
+      return (1);
+}
