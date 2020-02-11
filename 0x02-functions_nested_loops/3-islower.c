@@ -2,12 +2,11 @@
 /**
  * _islower - check the code for Holberton School students.
  *
- * @ch: Variable containing the letter to be checked
+ * @c: Variable containing the letter to be checked
  * Return: Always 0.
  */
-int _islower(int ch)
+int _islower(int c)
 {
-int c = ch;
 if (c >= 65 && c <= 90)
 return (0);
 else
