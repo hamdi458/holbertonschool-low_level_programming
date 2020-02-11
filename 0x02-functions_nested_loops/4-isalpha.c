@@ -2,7 +2,7 @@
 #include "holberton.h"
 /**
  * _isalpha - checks for alphabetic characters
- *
+ * @c: variable
  * Return: 1 if c is a letter, 0 not alpha
  *
  */
