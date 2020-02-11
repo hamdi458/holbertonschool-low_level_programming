@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * main - Entry point
+ * _abs - Print the absolute value of an integer
+ * @i: The value to be converted to absolute value
  *
- * Return: Always _abs (i)
+ * Return: absolute value
  */
 int _abs(int i)
 {
