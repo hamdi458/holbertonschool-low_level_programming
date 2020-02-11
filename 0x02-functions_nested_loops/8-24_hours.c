@@ -1,24 +1,21 @@
 #include "holberton.h"
 /**
- * jack_bauer - checks for alphabetic characters
- * @c: Variable containing the letter to be checked
+ * jack_bauer - print every minute of the day of Jack Bauer
  *
- * Return: 1 if c is a letter, 0 not alpha
- *
+ * Return: blabla
  */
 void jack_bauer(void)
 {
-int i;
-int j; 
-for(i=0; i<=23; i++)
-for(j=0; j<=59; j++)
+int i, j;
+for (i = 0; i <= 23; i++)
+for (j = 0; j <= 59; j++)
 {
-_putchar(i/10+'0');
-_putchar(i%10+'0');
+_putchar(i / 10 + '0');
+_putchar(i % 10 + '0');
 _putchar(' ');
 _putchar(':');
-_putchar(j/10+'0');
-_putchar(j%10+'0');
+_putchar(j / 10 + '0');
+_putchar(j % 10 + '0');
 _putchar('\n');
 }
 }
