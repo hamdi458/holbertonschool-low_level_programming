@@ -15,7 +15,7 @@ k = r * c;
 if (k >= 10)
 {
 _putchar(' ');
-_putchar(k /10 + '0');
+_putchar(k / 10 + '0');
 _putchar(k % 10 + '0');
 }
 else
@@ -23,7 +23,7 @@ else
 if (c != 0)
 {
 _putchar(' ');
- _putchar(' ');
+_putchar(' ');
 }
 _putchar(k + '0');
 }
