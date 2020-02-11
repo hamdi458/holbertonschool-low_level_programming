@@ -9,8 +9,7 @@
  */
 void print_to_98(int n)
 {
-
-xint i;
+int i;
 if (n == 98)
 {
 printf("%d\n", n);
