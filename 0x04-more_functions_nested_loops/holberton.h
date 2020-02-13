@@ -6,7 +6,7 @@ void print_most_numbers(void);
 void more_numbers(void);
 void print_line(int n);
 void print_diagonal(int n);
-int print_last_digit(int);
+void print_square(int size);
 void jack_bauer(void);
 void times_table(void);
 int mul(int a, int b);
