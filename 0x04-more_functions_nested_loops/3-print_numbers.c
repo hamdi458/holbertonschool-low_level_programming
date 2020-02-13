@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_alphabet - check the code for Holberton School students.
+ * print_numbers - prints the numbers, from 0 to 9.
  *
  * Return: Always 0.
  */
