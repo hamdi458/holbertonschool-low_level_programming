@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_square - prints the numbers, from 0 to 9.
+ * print_triangle - print triangle .
  *@size : the number of #
  * Return: Always 0.
  */
@@ -13,7 +13,7 @@ if (size <= 0)
 _putchar('\n');
 for (i = 1; i <= size; i++)
 {
-for (j = 1; j <= size-i; j++)
+for (j = 1; j <= size - i; j++)
 _putchar(' ');
 for (k = 1; k <= i; k++)
 _putchar('#');
