@@ -2,7 +2,7 @@ int _isupper(int c);
 int _isdigit(int c);
 int _putchar(char c);
 void print_numbers(void);
-int _islower(int c);
+void print_most_numbers(void);
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
