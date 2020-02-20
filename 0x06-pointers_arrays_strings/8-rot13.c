@@ -7,8 +7,8 @@
  */
 char *rot13(char *c)
 {
-char remp[] = "abcdefghijklmnopqrstuvwxyz";
-char remp1[] = "nopqrstuvwxyzabcdefghijklm";
+char remp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char remp1[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 int i, j;
 for (i = 0; c[i] != '\0'; i++)
 for (j = 0; j < 26; j++)
