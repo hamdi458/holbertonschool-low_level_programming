@@ -11,7 +11,7 @@ char remp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char remp1[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 int i, j;
 for (i = 0; c[i] != '\0'; i++)
-for (j = 0; j < 26; j++)
+for (j = 0; j < 52; j++)
 {
 if (c[i] == remp[j])
 {
