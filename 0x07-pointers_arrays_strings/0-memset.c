@@ -1,4 +1,4 @@
-#include <stdio.h>
+B#include <stdio.h>
 #include "holberton.h"
 /**
  * _memset - function
@@ -13,4 +13,4 @@ unsigned int i = 0;
 for (i = 0; i < n; i++)
 s[i] = b;
 return (s);
- }
+}
