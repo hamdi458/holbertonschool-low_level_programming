@@ -16,5 +16,9 @@ s++;
 if (s[i] == c)
 return (s);
 }
+if (c == '\0')
+return (s);
+else if (*s != c)
 return (0);
+return (s);
 }
