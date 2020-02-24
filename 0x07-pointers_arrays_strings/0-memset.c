@@ -1,4 +1,4 @@
-B#include <stdio.h>
+#include <stdio.h>
 #include "holberton.h"
 /**
  * _memset - function
