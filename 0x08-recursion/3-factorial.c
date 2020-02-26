@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * factoriel - function
+ * factorial - function
  * @n: var
  * Return: 0
  */
@@ -10,8 +10,8 @@ if (n < 0)
 return (-1);
 if (n > 0)
 {
-return (n * factorial(n-1));
+return (n * factorial(n - 1));
 }
 else
-return(1);
+return (1);
 }
