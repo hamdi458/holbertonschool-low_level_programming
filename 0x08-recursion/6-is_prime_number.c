@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * prime_ - fun
  * @x: var
@@ -14,7 +13,7 @@ if (y < 0)
 return (0);
 if (x == y)
 return (1);
-if (y % count == 0)
+if (y % x == 0)
 return (0);
 else
 return (prime_(++x, y));
