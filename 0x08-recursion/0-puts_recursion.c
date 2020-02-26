@@ -2,9 +2,7 @@
 /**
  * _puts_recursion - function
  * @s: var
- * @b: var
- * @n: var
- * Return: a pointer
+ * Return: 0
  */
 void _puts_recursion(char *s)
 {
