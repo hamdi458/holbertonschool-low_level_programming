@@ -1,15 +1,17 @@
 #include <stdio.h>
 /**
- * main - prints name
- * @argc: argc
- * @argv: argv
- * Return: 0
+ *main -  prints its name.
+ *@argc: var
+ *@argv:var
+ *
+ *Return: int
  */
 int main(int argc, char **argv)
 {
-if (argc != 0)
-{
+while (argc != '\0')
+  {
 printf("%s\n", argv[0]);
+argc--;
 }
 return (0);
 }
