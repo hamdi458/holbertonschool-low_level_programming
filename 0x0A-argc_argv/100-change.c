@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - Print the minumu, number of coins needed
- *@argc: nbr argument
- *@argv: argument number
+ * main - fun
+ *@argc: argc var
+ *@argv: argv var
  *Return: 0
  */
 int main(int argc, char *argv[])
