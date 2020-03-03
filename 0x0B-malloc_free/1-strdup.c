@@ -15,9 +15,10 @@ int i = 0;
 int j = 0;
 while(str[i])
 i++;
-if(i == 0)
-return("null");
+i++;
 ar = malloc(i * sizeof(char));
+if (str == NULL || ar == 0)
+return(NULL);
 for (j = 0; j < i; j++)
 {
 ar[j] = str[j];
