@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * free_grid - Frees 2D array
- * @grid: The grid to freed
- * @height: The height of the grid
+ * free_grid - fun
+ * @grid: The grid var
+ * @height: The var
  */
 
 void free_grid(int **grid, int height)
