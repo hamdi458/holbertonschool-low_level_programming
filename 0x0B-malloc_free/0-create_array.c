@@ -17,7 +17,7 @@ ar = malloc(size * sizeof(char));
 if (ar == 0)
 return ("null");
 if (size == 0)
-return ("null");
+return (0);
 for (i = 0; i < size; i++)
 {
 ar[i] = c;
