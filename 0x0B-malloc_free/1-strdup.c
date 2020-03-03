@@ -17,7 +17,7 @@ while (str[i])
 i++;
 i++;
 ar = malloc(i);
-if (str == NULL || ar == 0)
+if (str == NULL || ar == NULL)
 return (NULL);
 for (j = 0; j < i; j++)
 {
