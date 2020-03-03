@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
 /**
  * _strdup - fun
@@ -11,14 +10,13 @@
 char *_strdup(char *str)
 {
 char *ar;
-int i;
-int j;
+ int i, j;
 i = 0;
 while (str[i])
 i++;
 i++;
 ar = malloc(i);
-if (str == NULL || ar == NULL)
+if (ar == NULL)
 return (NULL);
 for (j = 0; j < i; j++)
 {
