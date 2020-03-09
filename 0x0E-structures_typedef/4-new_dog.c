@@ -16,19 +16,19 @@ int i, j;
 d = malloc(sizeof(struct dog));
 if (d == NULL)
 return (NULL);
-i = 0;
+i = 1;
 while (name[i] != '\0')
 i++;
-d->name = malloc(i + 2);
+d->name = malloc(i + 1);
 if (d->name == NULL)
 {
 free(d);
 return (NULL);
 }
-j = 0;
+j = 1;
 while (owner[j] != '\0')
 j++;
-d->owner = malloc(j + 2);
+d->owner = malloc(j + 1);
 if (d->owner == NULL)
 {
 free(d->name);
