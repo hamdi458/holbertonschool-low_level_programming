@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "dog.h"
 
- /**
-  * print_dog - void
-  * @d: var pointer
-  */
+/**
+ * print_dog - void
+ * @d: var pointer
+ */
 
 void print_dog(struct dog *d)
 {
