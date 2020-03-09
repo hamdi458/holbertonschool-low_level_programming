@@ -38,7 +38,9 @@ return (NULL);
 d->age = age;
 for (i = 0; name[i] != '\0'; i++)
 d->name[i] = name[i];
+d->name[i] = '\0';
 for (j = 0; owner[j] != '\0'; j++)
 d->owner[j] = owner[j];
+d->owner[j] = '\0';
 return (d);
 }
