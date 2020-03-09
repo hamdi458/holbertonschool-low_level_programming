@@ -19,7 +19,7 @@ return (NULL);
 i = 0;
 while (name[i] != '\0')
 i++;
-d->name = malloc(i + 1);
+d->name = malloc(i + 2);
 if (d->name == NULL)
 {
 free(d);
@@ -28,7 +28,7 @@ return (NULL);
 j = 0;
 while (owner[j] != '\0')
 j++;
-d->owner = malloc(j + 1);
+d->owner = malloc(j + 2);
 if (d->owner == NULL)
 {
 free(d->name);
