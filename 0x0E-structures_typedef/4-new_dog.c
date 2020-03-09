@@ -31,6 +31,7 @@ j++;
 d->owner = malloc(j + 1);
 if (d->owner == NULL)
 {
+free(d->name);
 free(d);
 return (NULL);
 }
