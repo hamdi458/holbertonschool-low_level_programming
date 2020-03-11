@@ -17,10 +17,10 @@ op_t ops[6] = {
 {NULL, NULL}
 };
 i = 0;
-while (i < 5)
+while (i <= 4)
 {
-if (s[0] == *(ops[i].op))
-return (ops[i].f);
+if (*s == *(ops + i)->op)
+return ((ops + i)->f);
 i++;
 }
 return (NULL);
