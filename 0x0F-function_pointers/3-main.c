@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "3-calc.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * main - check the code for Holberton School students.
  *@argc:var argc
@@ -15,7 +16,7 @@ if (argc != 4)
 printf("Error\n");
 exit(98);
 }
- if (strlen(argv[2] != 1))
+if (strlen(argv[2]) != 1)
 {
 printf("Error\n");
 exit(99);
