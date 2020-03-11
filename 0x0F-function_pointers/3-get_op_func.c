@@ -1,10 +1,9 @@
 #include "calc.h"
 #include <stdio.h>
 /**
- * get_op_func - Select correct operation to do
- * @s: Operator
- *
- * Return: A pointer the function
+ * get_op_func - fun int
+ * @s: var op
+ * Return: 0
  */
 int (*get_op_func(char *s))(int, int)
 {
