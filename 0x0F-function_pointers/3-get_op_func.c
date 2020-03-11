@@ -19,8 +19,8 @@ op_t ops[6] = {
 i = 0;
 while (i < 5)
 {
-  if (s[0] == *(ops[i].op))
-  return (ops[i].f);
+if (s[0] == *(ops[i].op))
+return (ops[i].f);
 i++;
 }
 return (NULL);

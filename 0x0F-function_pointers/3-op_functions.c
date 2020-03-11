@@ -12,7 +12,7 @@ return (a + b);
 }
 /**
  * op_sub - fun sub
- * @a: var 
+ * @a: var
  * @b: var
  * Return: Always 0
  */
@@ -42,7 +42,7 @@ int op_div(int a, int b)
 return (a / b);
 }
 /**
- * op_mod - fun mod 
+ * op_mod - fun mod
  * @a: var
  * @b: var
  * Return: Always 0
