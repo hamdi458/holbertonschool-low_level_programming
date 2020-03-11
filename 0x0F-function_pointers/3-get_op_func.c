@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 #include <stdio.h>
 /**
  * get_op_func - fun int
@@ -19,8 +19,8 @@ op_t ops[6] = {
 i = 0;
 while (i < 5)
 {
-if (s == ops[i].op)
-return (f.ops[i];
+  if (s[0] == *(ops[i].op))
+  return (ops[i].f);
 i++;
 }
 return (NULL);
