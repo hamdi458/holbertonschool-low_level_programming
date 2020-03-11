@@ -18,5 +18,5 @@ exit(98);
 i = atoi(argv[1]);
 j = atoi(argv[3]);
 printf("%d\n", get_op_func(argv[2])(i, j));
-return (0);   
+return (0);
 }
