@@ -1,4 +1,3 @@
-#include "variadic_functions.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdarg.h>
@@ -36,7 +35,7 @@ if (ch == NULL)
 printf("(nil)");
 break;
 }
-printf("%s", va_arg(ap, ch));
+printf("%s", ch);
 break;
 }
 while ((i < strlen(format)-1) && (format[i] == 'c'
