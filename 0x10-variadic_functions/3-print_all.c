@@ -10,7 +10,7 @@
 void print_all(const char * const format, ...)
 {
 unsigned  int i ;
-char *s;
+char *ch;
 va_list ap;
 va_start(ap, format);
 if (format == NULL)
@@ -30,13 +30,13 @@ case 'f':
 printf("%f", (float) va_arg(ap, double));
 break;
 case 's':
-s = va_arg(ap, char *);
-if (s == NULL)
+ch = va_arg(ap, char *);
+if (ch == NULL)
 {
 printf("(nil)");
 break;
 }
-printf("%s", s);
+printf("%s", va_arg(ap, ch));
 break;
 }
 while ((i < strlen(format)-1) && (format[i] == 'c'
