@@ -41,7 +41,10 @@ break;
 }
 while ((i < strlen(format)-1) && (format[i] == 'c'
 || format[i] == 'i' || format[i] == 'f'|| format[i] == 's'))
+{
 printf(", ");
+break;
+}
 i++;
 }
 va_end(ap);
