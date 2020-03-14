@@ -8,7 +8,7 @@
  */
 void print_all(const char * const format, ...)
 {
-unsigned  int i ;
+unsigned  int i;
 char *ch;
 va_list ap;
 va_start(ap, format);
@@ -38,8 +38,8 @@ break;
 printf("%s", ch);
 break;
 }
-while ((i < strlen(format)-1) && (format[i] == 'c'
-|| format[i] == 'i' || format[i] == 'f'|| format[i] == 's'))
+while ((i < strlen(format) - 1) &&
+(format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 {
 printf(", ");
 break;
