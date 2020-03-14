@@ -39,7 +39,7 @@ break;
 printf("%s", s);
 break;
 }
-if ((i < strlen(format)-1) && (format[i] == 'c'
+while ((i < strlen(format)-1) && (format[i] == 'c'
 || format[i] == 'i' || format[i] == 'f'|| format[i] == 's'))
 printf(", ");
 i++;
