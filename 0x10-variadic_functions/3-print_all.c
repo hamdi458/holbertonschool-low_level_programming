@@ -26,10 +26,10 @@ case 'f':
 printf("%f", va_arg(ap, double));
 break;
 case 's':
-ch = va_arg(ap, char *);
+ch = va_arg(ap, char*);
 if (ch == NULL)
 {
-printf("(nil)");
+printf("%s", ch);
 break;
 }
 printf("%s", ch);
