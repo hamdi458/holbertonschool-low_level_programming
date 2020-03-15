@@ -35,7 +35,7 @@ break;
 printf("%s", ch);
 break;
 }
-if (format[i] != '\0') &&
+if ((format[i + 1] != '\0') &&
 (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 {
 printf(", ");
