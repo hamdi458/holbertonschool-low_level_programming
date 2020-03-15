@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
-#include "variadic_function.h"
+#include "variadic_functions.h"
 /**
  * print_all - variadic fun
  * @format: var
