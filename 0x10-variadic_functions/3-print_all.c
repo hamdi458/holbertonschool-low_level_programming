@@ -8,12 +8,17 @@
  */
 void print_all(const char * const format, ...)
 {
-unsigned int i;
+unsigned int i = 0;
 char *ch;
 va_list ap;
 va_start(ap, format);
-i = 0;
-while (format[i] && format)
+while (format == NULL)
+{
+printf("\n");
+return;
+break;
+}
+while (format[i])
 {
 switch (format[i])
 {
@@ -38,9 +43,7 @@ break;
 }
 if ((format[i + 1] != '\0') &&
 (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
-{
 printf(", ");
-}
 i++;
 }
 va_end(ap);
