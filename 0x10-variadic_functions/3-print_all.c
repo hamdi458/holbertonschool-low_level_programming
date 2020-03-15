@@ -1,4 +1,3 @@
-#include <string.h>
 #include <stdio.h>
 #include <stdarg.h>
 /**
@@ -36,7 +35,7 @@ break;
 printf("%s", ch);
 break;
 }
-if ((i < strlen(format) - 1) &&
+if (format[i] != '\0') &&
 (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 {
 printf(", ");
