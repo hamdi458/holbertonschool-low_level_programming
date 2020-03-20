@@ -30,7 +30,7 @@ str++;
 nouveau->len = s;
 }
 nouveau->next = *head;
-*head->next = nouveau;
+*head = nouveau;
 return (nouveau);
 
 }
