@@ -14,6 +14,7 @@ if (now != NULL)
 {
 n = now->n;
 *head = now->next;
+free(now);
 return (n);
 }
 return (0);
