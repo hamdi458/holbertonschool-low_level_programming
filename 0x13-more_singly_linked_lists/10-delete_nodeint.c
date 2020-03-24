@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * delete_nodeint_at_index - function to insert a node in a list at given index
  * @head: pointer to the pointer to list
@@ -9,23 +10,28 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 listint_t *old, *pld;
 unsigned int i = 1;
-old = *head;
-if (head == NULL)
+if (*head == NULL)
 return (-1);
 if (index == 0)
 {
+pld = *head;
 *head = (*(head))->next;
-free(old);
+free(pld);
 return (1);
 }
-for (i = 1; old->next && i < index; i++)
+old = *head;
+pld = (*(head))->next;
+while (pld)
 {
-pld = old;
-old = old->next;
-}
-if (i < index)
-return (-1);
-pld->next = old->next;
-free(old);
+if (i == index)
+{
+old->next = pld->next;
+free(pld);
 return (1);
+}
+old = pld;
+pld = pld->next;
+i++;
+}
+return (-1);
 }
