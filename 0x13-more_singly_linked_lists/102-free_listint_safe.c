@@ -1,25 +1,28 @@
+#include <stdlib.h>
 #include "lists.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 /**
- *free_listint_safe -  delete a listint_t list.
- *@h : head of linked list
- *Return: 0
+ *print_listint_safe - fun that print all the elements of list int
+ *@head : pointer of list
+ *Return: nbr of elements in list
  */
-
 size_t free_listint_safe(listint_t **h)
 {
+listint_t *zeb;
 int s = 0;
-listint_t *asup;
-asup = *h;
 while (*h)
 {
+zeb = *h;
 *h = (*(h))->next;
-free(asup);
+free(zeb);
 s++;
-asup = *h;
+if ((void *)h > (void *)zeb)
+{
+free(zeb);
+s++;
+break;
 }
-*h = NULL;
-return (s);
+    }
+  
+  return (s);
 }
