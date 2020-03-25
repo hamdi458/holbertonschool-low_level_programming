@@ -13,9 +13,9 @@ size_t free_listint_safe(listint_t **h)
 
 	while (*h)
 	{
+		asup = *h;
 		if ((void *)(*(h))->next >= (void *)h)
 		{
-			asup = *h;
 			free(asup);
 			s++;
 			*h = NULL;
