@@ -8,21 +8,22 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-listint_t *zeb;
-int s = 0;
-while (*h)
-{
-zeb = *h;
-*h = (*(h))->next;
-free(zeb);
-s++;
-if ((void *)h > (void *)zeb)
-{
-free(zeb);
-s++;
-break;
-}
-    }
-  
-  return (s);
+	size_t s = 0;
+	listint_t *asup;
+
+	while (*h)
+	{
+		asup = *h;
+		*h = (*(h))->next;
+		if((void *)h >= (void *)asup)
+		{
+			free(asup);
+			s++;
+			*h = NULL;
+			break;
+		}
+		free(asup);
+		s++;
+	}
+	return (s);
 }
