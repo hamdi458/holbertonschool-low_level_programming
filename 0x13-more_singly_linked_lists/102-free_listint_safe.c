@@ -14,17 +14,17 @@ size_t free_listint_safe(listint_t **h)
 	*h = ((*h))->next;
 	while (asup)
 	{
-		if((void *)h >= (void *)asup)
+		if ((void *)h >= (void *)asup)
 		{
 			free(asup);
 			s++;
 			*h = NULL;
 			break;
 		}
-		asup = *h;
-		*h = (*(h))->next;
 		free(asup);
 		s++;
+		asup = *h;
+		*h = (*(h))->next;
 	}
 	return (s);
 }
