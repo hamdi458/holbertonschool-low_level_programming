@@ -9,11 +9,10 @@
 size_t free_listint_safe(listint_t **h)
 {
 	size_t s = 0;
-	listint_t *asup;
+	listint_t *asup = *h;
 
 	while (*h)
 	{
-		asup = *h;
 		if ((void *)(*(h))->next >= (void *)h)
 		{
 			free(asup);
