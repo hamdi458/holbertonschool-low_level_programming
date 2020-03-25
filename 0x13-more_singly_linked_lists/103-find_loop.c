@@ -9,6 +9,7 @@
 listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *zab;
+
 	if (!head)
 		return (NULL);
 	if (head == head->next)
