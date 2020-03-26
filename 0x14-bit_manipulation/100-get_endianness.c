@@ -6,7 +6,7 @@
 int get_endianness(void)
 {
 	unsigned int i = 1;
-	char *ch ;
+	char *ch;
 
 	ch = (char *)&i;
 
