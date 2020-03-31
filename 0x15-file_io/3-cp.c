@@ -49,11 +49,13 @@ void _copy(char *loc, char *dest)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", j);
 		exit(100);
 	}
+	close(j);
 	if (close(i) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", j);
 		exit(100);
 	}
+	close(i);
 }
 /**
  *main -main copies a file to another file
